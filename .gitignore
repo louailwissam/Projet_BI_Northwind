@@ -1,0 +1,17 @@
+# Ignorer l'environnement virtuel (TRÈS IMPORTANT)
+venv/
+env/
+
+# Ignorer les fichiers temporaires Python
+__pycache__/
+*.pyc
+
+# Ignorer les fichiers de configuration de l'éditeur
+.vscode/
+.idea/
+
+# (Optionnel) Ignorer les exports CSV générés si tu veux garder le repo léger
+data/exports/
+data/processed/
+
+# On garde data/raw car tes fichiers Excel sont importants pour que le projet marche ailleurs
