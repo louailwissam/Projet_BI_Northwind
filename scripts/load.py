@@ -29,9 +29,9 @@ def load_data(df):
         # À chaque fois qu'on lance, il supprime l'ancienne table et recrée la nouvelle avec les nouvelles données.
         df.to_sql(table_name, engine, if_exists='replace', index=False)
 
-        print(f"   ✅ SUCCÈS : {len(df)} lignes insérées dans la table '{table_name}'.")
+        print(f"   SUCCÈS : {len(df)} lignes insérées dans la table '{table_name}'.")
         return True
 
     except Exception as e:
-        print(f"   ❌ Erreur lors de l'écriture SQL : {e}")
+        print(f"    Erreur lors de l'écriture SQL : {e}")
         return False

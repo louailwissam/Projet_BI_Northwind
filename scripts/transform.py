@@ -11,7 +11,7 @@ def transform_data(df):
     print("\n--- 2. TRANSFORMATION DES DONNÉES ---")
 
     if df.empty:
-        print("⚠️ DataFrame vide, rien à transformer.")
+        print(" DataFrame vide, rien à transformer.")
         return df
 
     # 1. Conversion des Dates (Standardisation)
@@ -36,7 +36,7 @@ def transform_data(df):
             # On convertit en chaîne, on enlève les espaces (strip) et on met en majuscules (upper)
             df[col] = df[col].astype(str).str.strip().str.upper()
 
-    print("   ✅ Dates standardisées.")
-    print("   ✅ KPI 'Status_Livraison' calculé.")
+    print("    Dates standardisées.")
+    print("    KPI 'Status_Livraison' calculé.")
 
     return df
