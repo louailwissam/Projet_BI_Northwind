@@ -17,23 +17,29 @@ La solution repose sur un pipeline ETL (Extract, Transform, Load) développé en
 ## Arborescence du Projet
 Le projet respecte la structure suivante :
 
-/Projet_BI_Northwind
+## Arborescence du Projet
+
+```text
+Projet_BI_Northwind/
 │
-├── data/                  # Données sources (Excel)
-│   └── raw/
-├── scripts/               # Codes sources de l'ETL
-│   ├── config.py          # Configuration du projet
-│   ├── extract.py         # Extraction et déduplication
-│   ├── transform.py       # Nettoyage et calculs
-│   └── load.py            # Chargement en base
-├── reports/               # Rapport détaillé du projet (PDF)
-├── figures/               # Captures d'écran du dashboard
-├── video/                 # Vidéo de démonstration
-├── notebooks/             # Brouillons et tests exploratoires
-├── app.py                 # Application Dashboard (Streamlit)
-├── main.py                # Script d'exécution ETL (Backend)
-├── requirements.txt       # Liste des dépendances
-└── README.md              # Documentation du projet
+├── data/
+│   └── raw/                # Dossier contenant Orders.xlsx
+│
+├── scripts/                # Le cœur de l'ETL
+│   ├── config.py           # Configuration (Serveur, Chemins)
+│   ├── extract.py          # Extraction SQL + Excel
+│   ├── transform.py        # Nettoyage et calcul des KPIs
+│   └── load.py             # Chargement dans le Data Warehouse
+│
+├── reports/                # Contient le rapport final (PDF)
+├── figures/                # Contient les captures d'écran
+├── video/                  # Contient la vidéo de démonstration
+├── notebooks/              # Zone de tests et brouillons
+│
+├── app.py                  # L'application Dashboard (Streamlit)
+├── main.py                 # Le script d'exécution principal
+├── requirements.txt        # Liste des bibliothèques à installer
+└── README.md               # Documentation du projet
 
 ## Prérequis Techniques
 - Python 3.8 ou supérieur
