@@ -40,7 +40,7 @@ Projet_BI_Northwind/
 ├── main.py                 # Le script d'exécution principal
 ├── requirements.txt        # Liste des bibliothèques à installer
 └── README.md               # Documentation du projet
-
+```
 ## Prérequis Techniques
 - Python 3.8 ou supérieur
 - Microsoft SQL Server (avec la base de données Northwind installée)
